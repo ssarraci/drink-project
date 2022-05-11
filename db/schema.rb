@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 2022_05_11_201906) do
   create_table "orders", force: :cascade do |t|
     t.integer "client_id"
     t.integer "drink_id"
-    t.integer "bartender_id"
     t.integer "rating"
     t.text "comment"
     t.float "cost"
@@ -38,7 +37,6 @@ ActiveRecord::Schema.define(version: 2022_05_11_201906) do
     t.string "username"
     t.string "email"
     t.string "password_digest"
-    t.integer "role_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
