@@ -18,6 +18,10 @@ class DrinksController < ApplicationController
       render json: drink, status: :created
    end
 
+   def update
+      drink = Drink.find()
+   end
+
    private
 
    def drink_params
