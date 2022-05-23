@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:index, :show, :create]
 
-  resources :drinks, only: [:index, :show, :create]
+  resources :drinks
 end
